@@ -3,7 +3,7 @@ const status ='student'
 let count = 0
 
 if (date === 2050) {
-	console.log("January", 'New Year’s Day'
+	console.log("January", 'New Year’s Day')
 	console.log("March", 'Human Rights Day')
 
 	date = 'April'
@@ -18,7 +18,7 @@ if (date === 2050) {
 
 	console.log('August', 'Women’s Day')
 	console.log('September', 'Heritage Day')
-	
+
 	date = 'December'
 	console.log(date, 'Day of Reconciliation')
 	let count = count + 3
