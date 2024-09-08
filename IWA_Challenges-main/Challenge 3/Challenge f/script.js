@@ -13,7 +13,7 @@ if (date === 2050) {
 
 	if (status === "student") {
 	  console.log('June', 'Youth Day')
-		let count = count + 1
+		count = count + 1
   }
 
 	console.log('August', 'Women’s Day')
@@ -21,15 +21,15 @@ if (date === 2050) {
 
 	date = 'December'
 	console.log(date, 'Day of Reconciliation')
-	let count = count + 3
+	count = count + 3
 
 	if (status = "parent") {
 	  console.log(date, 'Christmas Day')
-	  let count = count + 1
+	  count = count + 1
   }
 
 	console.log(date, 'Day of Goodwill')
-	let count = count + 1
+	count = count + 1
 }
 
 console.log('Your status is:', status)
