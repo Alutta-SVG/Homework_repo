@@ -23,7 +23,7 @@ if (date === 2050) {
 	console.log(date, 'Day of Reconciliation')
 	count = count + 3
 
-	if (status = "parent") {
+	if (status === "parent") {
 	  console.log(date, 'Christmas Day')
 	  count = count + 1
   }
