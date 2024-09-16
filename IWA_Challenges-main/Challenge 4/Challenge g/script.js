@@ -1,6 +1,6 @@
-FREE_WARNING = 'Free shipping only applies to single customer orders'
-BANNED_WARNIN = 'Unfortunately we do not ship to your country of residence'
-NONE_SELECTED = '0'
+let FREE_WARNING = 'Free shipping only applies to single customer orders'
+let BANNED_WARNIN = 'Unfortunately we do not ship to your country of residence'
+let NONE_SELECTED = '0'
 
 if (location = RSA) { shipping === 400 && currency === 'R' }
 
