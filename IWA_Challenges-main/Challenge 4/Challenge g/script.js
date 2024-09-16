@@ -6,20 +6,26 @@ let shipping = null
 let location = 'RSA'
 let currency = null
 
-if (location = RSA) { shipping === 400 && currency === 'R' }
+if (location === 'RSA') { 
+	shipping = 400 
+	currency = 'R' }
+else if (location === 'NAM'){
+	shipping = 600
+	currency = '$' 
+}
+else if (location === 'NK'){
+	console.log(BANNED_WARNIN)
+}
+else {
+	shipping = 800
+	currency = '$'
+}
 
-if else location = NAM
-shipping = 600 
-else shipping = 800
-
-shoes = 300 * 1
-toys - 100 * 5
-shirts = 150 * 'NONE_SELECTED'
-batteries 35 * 2
-pens = 5 * 'NONE_SELECTED' 
-
-
-currency = $
+let shoes = 300 * 1
+let toys = 100 * 5
+let shirts = 150 * NONE_SELECTED
+let batteries = 35 * 2
+let pens = 5 * NONE_SELECTED 
 
 if (shoes + batteries + pens + shirts > 1000 &&  ) {
 	if (location = NAM && customers < 2) {
