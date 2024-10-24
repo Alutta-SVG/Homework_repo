@@ -23,7 +23,7 @@ const rent = {
     'large-room': 300,
     'small-apartment': 400,
     'large-apartment': 800,
-    'small-house': 1200,
+    'small-house': 1200,    
     'large-house': 2400,
 }
 
