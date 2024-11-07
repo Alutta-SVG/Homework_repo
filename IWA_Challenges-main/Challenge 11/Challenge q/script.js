@@ -28,21 +28,25 @@ const STATUS_MAP = {
 }
 
 // Edit below line only
+const book =[
+    {
+    status: document.querySelector('status').innerText
+    reserve: document.querySelector('reserve').innerText
+    checkout: selector(checkout)
+    checkin: selector(checkin)
+    
+    status: selector(status)
+    reserve: selector(reserve)
+    checkout: selector(checkout)
+    checkin: selector(checkin)
+    
+    status: selector(status)
+    reserve: selector(reserve)
+    checkout: selector(checkout)
+    checkin: selector(checkin)
 
-status = selector(status)
-reserve = selector(reserve)
-checkout = selector(checkout)
-checkin = selector(checkin)
-
-status = selector(status)
-reserve = selector(reserve)
-checkout = selector(checkout)
-checkin = selector(checkin)
-
-status = selector(status)
-reserve = selector(reserve)
-checkout = selector(checkout)
-checkin = selector(checkin)
+    }
+]
 
 checkin.0.color = none
 status.0.style.color = STATUS_MAP.status.color
