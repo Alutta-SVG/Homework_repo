@@ -30,21 +30,32 @@ const STATUS_MAP = {
 // Edit below line only
 const book =[
     {
-    status: document.querySelector('status').innerText
-    reserve: document.querySelector('reserve').innerText
-    checkout: selector(checkout)
-    checkin: selector(checkin)
+    status: document.querySelector('#book1.status').innerText,
+    html:{
+        status: document.querySelector('#book1.status'),
+        reserve: document.querySelector('#book1.reserve'),
+        checkout: document.querySelector('#book1.checkout'),
+        checkin: document.querySelector('#book1.checkin'),
+    },
     
-    status: selector(status)
-    reserve: selector(reserve)
-    checkout: selector(checkout)
-    checkin: selector(checkin)
+   status: document.querySelector('#book2.status').innerText,
+   html: { 
+    status: document.querySelector('#book2.status'),
+    reserve: document.querySelector('#book2.reserve'),
+    checkout: document.querySelector('#book2.checkout'),
+    checkin: document.querySelector('#book2.checkin'),
     
-    status: selector(status)
-    reserve: selector(reserve)
-    checkout: selector(checkout)
-    checkin: selector(checkin)
+   },
 
+   status: document.querySelector('#book3.status').innerText,
+   html: {
+    status: document.querySelector('#book3.status'),
+    reserve: document.querySelector('#book3.reserve'),
+    checkout: document.querySelector('#book3.checkout'),
+    checkin: document.querySelector('#book3.checkin'),
+
+   }
+   
     }
 ]
 
