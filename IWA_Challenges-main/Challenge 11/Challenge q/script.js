@@ -28,51 +28,45 @@ const STATUS_MAP = {
 }
 
 // Edit below line only
-const book =[
+const books = [
     {
-    status: document.querySelector('#book1.status').innerText,
-    html:{
-        status: document.querySelector('#book1.status'),
-        reserve: document.querySelector('#book1.reserve'),
-        checkout: document.querySelector('#book1.checkout'),
-        checkin: document.querySelector('#book1.checkin'),
+        status: document.querySelector('#book1 .status').innerText,
+        html: {
+            status: document.querySelector('#book1 .status'),
+            reserve: document.querySelector('#book1 .reserve'),
+            checkout: document.querySelector('#book1 .checkout'),
+            checkin: document.querySelector('#book1 .checkin'),
+        },
     },
-    
-   status: document.querySelector('#book2.status').innerText,
-   html: { 
-    status: document.querySelector('#book2.status'),
-    reserve: document.querySelector('#book2.reserve'),
-    checkout: document.querySelector('#book2.checkout'),
-    checkin: document.querySelector('#book2.checkin'),
-    
-   },
-
-   status: document.querySelector('#book3.status').innerText,
-   html: {
-    status: document.querySelector('#book3.status'),
-    reserve: document.querySelector('#book3.reserve'),
-    checkout: document.querySelector('#book3.checkout'),
-    checkin: document.querySelector('#book3.checkin'),
-
-   }
-   
+    {
+        status: document.querySelector('#book2 .status').innerText,
+        html: {
+            status: document.querySelector('#book2 .status'),
+            reserve: document.querySelector('#book2 .reserve'),
+            checkout: document.querySelector('#book2 .checkout'),
+            checkin: document.querySelector('#book2 .checkin'),
+        },
+    },
+    {
+        status: document.querySelector('#book3 .status').innerText,
+        html: {
+            status: document.querySelector('#book3 .status'),
+            reserve: document.querySelector('#book3 .reserve'),
+            checkout: document.querySelector('#book3 .checkout'),
+            checkin: document.querySelector('#book3 .checkin'),
+        },
     }
 ]
 
-checkin.0.color = none
-status.0.style.color = STATUS_MAP.status.color
-reserve.0 = STATUS_MAP.status.canReserver ? 'enabled' : 'disabled'
-checkout.0 = STATUS_MAP.status.canCheckout ? 'enabled' : 'disabled'
-checkin.0 = STATUS_MAP.status.canCheckIn ? 'enabled' : 'disabled'
+// Loop through each book to set styles and button states
+books.forEach((books) => {
+    const statusConfig = STATUS_MAP[books.status];
+    
+    // Set the color of the status element
+    books.html.status.style.color = statusConfig.color;
 
-checkin.1.color = none
-status.1.style.color = STATUS_MAP.status.color
-reserve.1 = STATUS_MAP.status.canReserver ? 'enabled' : 'disabled'
-checkout.1 = STATUS_MAP.status.canCheckout ? 'enabled' : 'disabled'
-checkin.1 = STATUS_MAP.status.canCheckIn ? 'enabled' : 'disabled'
-
-checkin.2.color = none
-status.2.style.color = STATUS_MAP.status.color
-reserve.2 = STATUS_MAP.status.canReserver ? 'enabled' : 'disabled'
-checkout.2 = STATUS_MAP.status.canCheckout ? 'enabled' : 'disabled'
-checkin.2 = STATUS_MAP.status.canCheckIn ? 'enabled' : 'disabled'
+    // Enable or disable buttons based on the status configuration
+    books.html.reserve.disabled = !statusConfig.canReserve;
+    books.html.checkout.disabled = !statusConfig.canCheckout;
+    books.html.checkin.disabled = !statusConfig.canCheckIn;
+});
